@@ -12,6 +12,7 @@
   <Updates Enabled="TRUE" />
   <RemoveMSI />
   <AppSettings>
+    <User Key="software\microsoft\office\16.0\common\links" Name="browserchoice" Value="0" Type="REG_DWORD" App="office16" Id="L_M365LinksBrowserChoice" />
     <User Key="software\microsoft\office\16.0\osm" Name="enableupload" Value="0" Type="REG_DWORD" App="office16" Id="L_OfficeInventoryAgentUpload" />
     <User Key="software\microsoft\office\16.0\osm" Name="enablefileobfuscation" Value="1" Type="REG_DWORD" App="office16" Id="L_OfficeInventoryAgentFilemetadataObfuscation" />
     <User Key="software\microsoft\office\16.0\osm" Name="enablelogging" Value="0" Type="REG_DWORD" App="office16" Id="L_EnableLogging" />
