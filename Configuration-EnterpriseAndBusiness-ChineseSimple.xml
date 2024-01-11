@@ -1,7 +1,7 @@
 <Configuration>
   <Add OfficeClientEdition="64" Channel="SemiAnnual" MigrateArch="TRUE">
     <Product ID="O365ProPlusRetail">
-      <Language ID="en-us" />   
+      <Language ID="zh-cn" />    
       <ExcludeApp ID="Access" />
       <ExcludeApp ID="Groove" />
       <ExcludeApp ID="Lync" />
@@ -9,44 +9,8 @@
       <ExcludeApp ID="Teams" />
       <ExcludeApp ID="Bing" />
     </Product>
-    <Product ID="O365ProPlusRetail">
-      <Language ID="zh-hk" />    
-      <ExcludeApp ID="Access" />
-      <ExcludeApp ID="Groove" />
-      <ExcludeApp ID="Lync" />
-      <ExcludeApp ID="Publisher" />
-      <ExcludeApp ID="Teams" />
-      <ExcludeApp ID="Bing" />
-    </Product>
-    <Product ID="O365ProPlusRetail">
+    <Product ID="O365BusinessRetail">
       <Language ID="zh-cn" />      
-      <ExcludeApp ID="Access" />
-      <ExcludeApp ID="Groove" />
-      <ExcludeApp ID="Lync" />
-      <ExcludeApp ID="Publisher" />
-      <ExcludeApp ID="Teams" />
-      <ExcludeApp ID="Bing" />
-    </Product>
-    <Product ID="O365BusinessRetail">
-      <Language ID="en-us" />
-      <ExcludeApp ID="Access" />
-      <ExcludeApp ID="Groove" />
-      <ExcludeApp ID="Lync" />
-      <ExcludeApp ID="Publisher" />
-      <ExcludeApp ID="Teams" />
-      <ExcludeApp ID="Bing" />
-    </Product>
-    <Product ID="O365BusinessRetail">
-      <Language ID="zh-hk" />
-      <ExcludeApp ID="Access" />
-      <ExcludeApp ID="Groove" />
-      <ExcludeApp ID="Lync" />
-      <ExcludeApp ID="Publisher" />
-      <ExcludeApp ID="Teams" />
-      <ExcludeApp ID="Bing" />
-    </Product>
-    <Product ID="O365BusinessRetail">
-      <Language ID="zh-cn" />
       <ExcludeApp ID="Access" />
       <ExcludeApp ID="Groove" />
       <ExcludeApp ID="Lync" />
