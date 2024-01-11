@@ -35,14 +35,10 @@ $client.DownloadFile($urlPackage, $latestOdt)
 & 7z e $latestOdt setup.exe "-o$LocalODTPath" -aoa
 
 # Get the ODT config
-$client.DownloadFile("$MSOConfigBaseUrl/Configuration-AfB-29039.xml","$LocalODTPath\Configuration-AfB-29039.xml")
-$client.DownloadFile("$MSOConfigBaseUrl/Configuration-AfE-29039.xml","$LocalODTPath\Configuration-AfE-29039.xml")
+$client.DownloadFile("$MSOConfigBaseUrl/Configuration-EnterpriseAndBusiness-English.xml","$LocalODTPath\Configuration-EnterpriseAndBusiness-English.xml")
 
 # Download MS Office, then customize as you see fit to actually install it
 Write-Host "`nPlease wait while downloading Office...`n`n" -ForegroundColor 3
 & "C:\IT-Disks\ODT\setup.exe" /download "C:\IT-Disks\ODT\Configuration-AfB-29039.xml"
-Write-Host "To install Apps for Business, run: `
-`& `"C:\IT-Disks\ODT\setup.exe`" /configure `"C:\IT-Disks\ODT\Configuration-AfB-29039.xml`"`n `
-To install Apps for Enterprise, run: `
-`& `"C:\IT-Disks\ODT\setup.exe`" /configure `"C:\IT-Disks\ODT\Configuration-AfE-29039.xml`"`n `
-(Requires Admin)" -ForegroundColor Cyan
+Write-Host "To install, run: `
+`& `"C:\IT-Disks\ODT\setup.exe`" /configure `"C:\IT-Disks\ODT\Configuration-EnterpriseAndBusiness-English.xml`"`n `
