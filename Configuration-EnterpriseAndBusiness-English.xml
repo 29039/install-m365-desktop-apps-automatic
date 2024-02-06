@@ -32,41 +32,41 @@
   <Updates Enabled="TRUE" />
   <RemoveMSI />
   <AppSettings>
-    <User Key="software\microsoft\office\16.0\common\internet" Name="useonlinecontent" Value="2" Type="REG_DWORD" App="office16" Id="L_Onlinecontentoptions" />
-    <User Key="software\microsoft\office\16.0\common\general" Name="shownfirstrunoptin" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOptinWizard" />
-    <User Key="software\microsoft\office\16.0\common" Name="qmenable" Value="0" Type="REG_DWORD" App="office16" Id="L_EnableCustomerExperienceImprovementProgram" />
-    <User Key="software\microsoft\office\16.0\common" Name="updatereliabilitydata" Value="1" Type="REG_DWORD" App="office16" Id="L_UpdateReliabilityPolicy" />
+    <User Key="software\microsoft\office\16.0\common\languageresources\enabledlanguages" Name="en-au" Value="3" Type="REG_DWORD" App="office16" Id="L_EnglishAustralia" />
     <User Key="software\microsoft\office\16.0\common" Name="vbaoff" Value="1" Type="REG_DWORD" App="office16" Id="L_disablevbaforofficeapplications319" />
     <User Key="software\microsoft\office\common\security" Name="disableallactivex" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableAllActiveX" />
-    <User Key="software\microsoft\office\16.0\common\languageresources\enabledlanguages" Name="en-au" Value="3" Type="REG_DWORD" App="office16" Id="L_EnglishAustralia" />
-    <User Key="software\microsoft\office\16.0\common\services\fax" Name="nofax" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableFaxOverInternetfeature" />
+    <User Key="software\microsoft\office\16.0\common\general" Name="disablecomingsoon" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableComingSoon" />
     <User Key="software\microsoft\office\16.0\common\general" Name="optindisable" Value="1" Type="REG_DWORD" App="office16" Id="L_SuppressRecommendedSettingsDialog" />
-    <User Key="software\microsoft\office\16.0\osm" Name="enableupload" Value="0" Type="REG_DWORD" App="office16" Id="L_OfficeInventoryAgentUpload" />
+    <User Key="software\microsoft\office\16.0\common\general" Name="shownfirstrunoptin" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOptinWizard" />
+    <User Key="software\microsoft\office\16.0\common\graphics" Name="disableanimations" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableAnimations" />
+    <User Key="software\microsoft\office\16.0\common\internet" Name="useonlinecontent" Value="2" Type="REG_DWORD" App="office16" Id="L_Onlinecontentoptions" />
+    <User Key="software\microsoft\office\16.0\common\links" Name="browserchoice" Value="0" Type="REG_DWORD" App="office16" Id="L_M365LinksBrowserChoice" />
+    <User Key="software\microsoft\office\16.0\common\services\fax" Name="nofax" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableFaxOverInternetfeature" />
+    <User Key="software\microsoft\office\16.0\firstrun" Name="bootedrtm" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOfficeFirstrun" />
+    <User Key="software\microsoft\office\16.0\firstrun" Name="disablemovie" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableMovie" />
     <User Key="software\microsoft\office\16.0\osm" Name="enablefileobfuscation" Value="1" Type="REG_DWORD" App="office16" Id="L_OfficeInventoryAgentFilemetadataObfuscation" />
     <User Key="software\microsoft\office\16.0\osm" Name="enablelogging" Value="0" Type="REG_DWORD" App="office16" Id="L_EnableLogging" />
-    <User Key="software\microsoft\office\16.0\common\graphics" Name="disableanimations" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableAnimations" />
-    <User Key="software\microsoft\office\16.0\common\feedback" Name="surveyenabled" Value="0" Type="REG_DWORD" App="office16" Id="L_SendSurvey" />
-    <User Key="software\microsoft\office\16.0\common\feedback" Name="enabled" Value="0" Type="REG_DWORD" App="office16" Id="L_SendFeedback" />
-    <User Key="software\microsoft\office\16.0\common\feedback" Name="includescreenshot" Value="0" Type="REG_DWORD" App="office16" Id="L_Screenshot" />
-    <User Key="software\microsoft\office\16.0\common\feedback" Name="includeemail" Value="0" Type="REG_DWORD" App="office16" Id="L_EmailCollection" />
-    <User Key="software\microsoft\office\16.0\common\feedback" Name="feedbackincludelog" Value="0" Type="REG_DWORD" App="office16" Id="L_LogCollection" />
+    <User Key="software\microsoft\office\16.0\osm" Name="enableupload" Value="0" Type="REG_DWORD" App="office16" Id="L_OfficeInventoryAgentUpload" />
     <User Key="software\microsoft\office\16.0\common" Name="autoorgidgetkey" Value="1" Type="REG_DWORD" App="office16" Id="L_AutoOrgIDGetKey" />
-    <User Key="software\microsoft\office\16.0\firstrun" Name="disablemovie" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableMovie" />
-    <User Key="software\microsoft\office\16.0\firstrun" Name="bootedrtm" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOfficeFirstrun" />
+    <User Key="software\microsoft\office\16.0\common" Name="qmenable" Value="0" Type="REG_DWORD" App="office16" Id="L_EnableCustomerExperienceImprovementProgram" />
+    <User Key="software\microsoft\office\16.0\common" Name="updatereliabilitydata" Value="1" Type="REG_DWORD" App="office16" Id="L_UpdateReliabilityPolicy" />
+    <User Key="software\microsoft\office\16.0\common\feedback" Name="enabled" Value="0" Type="REG_DWORD" App="office16" Id="L_SendFeedback" />
+    <User Key="software\microsoft\office\16.0\common\feedback" Name="feedbackincludelog" Value="0" Type="REG_DWORD" App="office16" Id="L_LogCollection" />
+    <User Key="software\microsoft\office\16.0\common\feedback" Name="includeemail" Value="0" Type="REG_DWORD" App="office16" Id="L_EmailCollection" />
+    <User Key="software\microsoft\office\16.0\common\feedback" Name="includescreenshot" Value="0" Type="REG_DWORD" App="office16" Id="L_Screenshot" />
+    <User Key="software\microsoft\office\16.0\common\feedback" Name="surveyenabled" Value="0" Type="REG_DWORD" App="office16" Id="L_SendSurvey" />
     <User Key="software\microsoft\office\16.0\excel" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationExcel" />
+    <User Key="software\microsoft\office\16.0\onenote" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationOneNote" />
+    <User Key="software\microsoft\office\16.0\outlook" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationOutlook" />
     <User Key="software\microsoft\office\16.0\powerpoint" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationPowerPoint" />
     <User Key="software\microsoft\office\16.0\visio" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationVisio" />
-    <User Key="software\microsoft\office\16.0\outlook" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationOutlook" />
-    <User Key="software\microsoft\office\16.0\onenote" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationOneNote" />
     <User Key="software\microsoft\office\16.0\word" Name="dontshowwhatsnew" Value="1" Type="REG_DWORD" App="office16" Id="L_DontShowWhatsNewInformationWord" />
-    <User Key="software\microsoft\office\16.0\common" Name="linkedin" Value="0" Type="REG_DWORD" App="office16" Id="L_AllowLinkedInFeatures" />
-    <User Key="software\microsoft\office\16.0\common\general" Name="disablecomingsoon" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableComingSoon" />
-    <User Key="software\microsoft\office\16.0\common\links" Name="browserchoice" Value="0" Type="REG_DWORD" App="office16" Id="L_M365LinksBrowserChoice" />
-    <User Key="software\microsoft\office\16.0\excel\options" Name="defaultformat" Value="51" Type="REG_DWORD" App="excel16" Id="L_SaveExcelfilesas" />
     <User Key="software\microsoft\office\16.0\outlook\options\general" Name="disableoutlookfeedbackfeatures" Value="0" Type="REG_DWORD" App="outlk16" Id="L_DisableOutlookFeedbackFeatures" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="linkedinresumeassistant" Value="0" Type="REG_DWORD" App="word16" Id="L_LinkedInResumeAssistant" />
+    <User Key="software\microsoft\office\16.0\common" Name="linkedin" Value="0" Type="REG_DWORD" App="office16" Id="L_AllowLinkedInFeatures" />
+    <User Key="software\microsoft\office\16.0\excel\options" Name="defaultformat" Value="51" Type="REG_DWORD" App="excel16" Id="L_SaveExcelfilesas" />
     <User Key="software\microsoft\office\16.0\powerpoint\options" Name="defaultformat" Value="27" Type="REG_DWORD" App="ppt16" Id="L_SavePowerPointfilesas" />
     <User Key="software\microsoft\office\16.0\word\options" Name="defaultformat" Value="" Type="REG_SZ" App="word16" Id="L_SaveWordfilesas" />
-    <User Key="software\microsoft\office\16.0\word\options" Name="linkedinresumeassistant" Value="0" Type="REG_DWORD" App="word16" Id="L_LinkedInResumeAssistant" />
   </AppSettings>
   <Display Level="Full" AcceptEULA="TRUE" />
 </Configuration>
