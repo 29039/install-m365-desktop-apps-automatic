@@ -8,6 +8,8 @@
       <ExcludeApp ID="Publisher" />
       <ExcludeApp ID="Teams" />
       <ExcludeApp ID="Bing" />
+ <!--     <ExcludeApp ID="OneNote" />-->
+ <!--     <ExcludeApp ID="PowerPoint" />-->
     </Product>
     <Product ID="O365BusinessRetail">
       <Language ID="zh-tw" />      
@@ -17,6 +19,8 @@
       <ExcludeApp ID="Publisher" />
       <ExcludeApp ID="Teams" />
       <ExcludeApp ID="Bing" />
+ <!--     <ExcludeApp ID="OneNote" />-->
+ <!--     <ExcludeApp ID="PowerPoint" />-->
     </Product>
   </Add>
   <Updates Enabled="TRUE" />
@@ -31,4 +35,5 @@
     <User Key="software\microsoft\office\16.0\word\options" Name="defaultformat" Value="" Type="REG_SZ" App="word16" Id="L_SaveWordfilesas" />
   </AppSettings>
   <Display Level="Full" AcceptEULA="TRUE" />
+<!--  <Property Name="SharedComputerLicensing" Value="1" /> -->
 </Configuration>
