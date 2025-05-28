@@ -40,7 +40,7 @@
     <User Key="software\microsoft\office\16.0\common" Name="linkedin" Value="0" Type="REG_DWORD" App="office16" Id="L_AllowLinkedInFeatures" />
     <User Key="software\microsoft\office\16.0\common" Name="qmenable" Value="0" Type="REG_DWORD" App="office16" Id="L_EnableCustomerExperienceImprovementProgram" />
     <User Key="software\microsoft\office\16.0\common" Name="updatereliabilitydata" Value="1" Type="REG_DWORD" App="office16" Id="L_UpdateReliabilityPolicy" />
-    <User Key="software\microsoft\office\16.0\common" Name="vbaoff" Value="1" Type="REG_DWORD" App="office16" Id="L_disablevbaforofficeapplications319" />
+<!--    <User Key="software\microsoft\office\16.0\common" Name="vbaoff" Value="1" Type="REG_DWORD" App="office16" Id="L_disablevbaforofficeapplications319" /> -->
     <User Key="software\microsoft\office\16.0\common\feedback" Name="enabled" Value="0" Type="REG_DWORD" App="office16" Id="L_SendFeedback" />
     <User Key="software\microsoft\office\16.0\common\feedback" Name="feedbackincludelog" Value="0" Type="REG_DWORD" App="office16" Id="L_LogCollection" />
     <User Key="software\microsoft\office\16.0\common\feedback" Name="includeemail" Value="0" Type="REG_DWORD" App="office16" Id="L_EmailCollection" />
