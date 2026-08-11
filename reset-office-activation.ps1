@@ -49,4 +49,4 @@ Start-Process -Filepath "conhost.exe" -ArgumentList "powershell -NoProfile -File
 Start-Sleep 3
 
 write-host "Execute WPJCleanUp.cmd: "
-Start-Process -Filepath "conhost.exe" -ArgumentList "cmd /D /C $BaseExtractPath\WPJCleanUp\WPJCleanUp\WPJCleanUp.cmd"
+Start-Process -Filepath "conhost.exe" -ArgumentList "cmd /D /C $BaseExtractPath\WPJCleanUp\WPJCleanUp\WPJCleanUp.cmd" -NoNewWindow -PassThru
