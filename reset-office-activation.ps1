@@ -16,6 +16,9 @@ $Urls = @(
 
 $BaseExtractPath = "$env:temp\o365reset\"
 
+# cleanup from any previous attempt
+Remove-Item -Path $BaseExtractPath -Force -Recurse -Confirm:$false -ea 0
+
 # create folder anyway
 New-Item -ItemType Directory -Path $BaseExtractPath -Force
 
@@ -31,20 +34,19 @@ foreach ($Url in $Urls) {
 }
 
 # check if the files exist after extract
-write-host "Test OLicenseCleanup.vbs: " -nonewline; Test-Path $BaseExtractPath\OLicenseCleanup.vbs
+write-host "Test OLicenseCleanup.vbs: " -nonewline; Test-Path $BaseExtractPath\OLicenseCleanup\OLicenseCleanup.vbs
 write-host "Test signoutofwamaccounts.ps1: " -nonewline; Test-Path $BaseExtractPath\signoutofwamaccounts.ps1
 write-host "Test WPJCleanUp.cmd: " -nonewline; Test-Path $BaseExtractPath\WPJCleanUp\WPJCleanUp\WPJCleanUp.cmd
 
+
 # execute each script
 write-host "Execute OLicenseCleanup.vbs: "
-Start-Process -Filepath cscript.exe -ArgumentList $BaseExtractPath\OLicenseCleanup.vbs -NoNewWindow -PassThru
-Start-Sleep 3
-write-host "Execute signoutofwamaccounts.ps1: "
-Start-Process -Filepath powershell.exe -ArgumentList $BaseExtractPath\signoutofwamaccounts.ps1 -NoNewWindow -PassThru
-Start-Sleep 3
-write-host "Execute WPJCleanUp.cmd: "
-Start-Process $BaseExtractPath\WPJCleanUp\WPJCleanUp\WPJCleanUp.cmd -NoNewWindow -PassThru
+Start-Process -Filepath cscript.exe -ArgumentList $BaseExtractPath\OLicenseCleanup\OLicenseCleanup.vbs -NoNewWindow -PassThru
 Start-Sleep 3
 
-# cleanup
-Remove-Item -Path $BaseExtractPath -Force -Recurse -Confirm:$false
+write-host "Execute signoutofwamaccounts.ps1: "
+Start-Process -Filepath "conhost.exe" -ArgumentList "powershell -NoProfile -File $BaseExtractPath\signoutofwamaccounts.ps1" -NoNewWindow -PassThru
+Start-Sleep 3
+
+write-host "Execute WPJCleanUp.cmd: "
+Start-Process -Filepath "conhost.exe" -ArgumentList "cmd /D /C $BaseExtractPath\WPJCleanUp\WPJCleanUp\WPJCleanUp.cmd"
